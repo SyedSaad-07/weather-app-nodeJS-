@@ -1,28 +1,3 @@
-
-// async function getWeatherByLocation(location='Karachi') {
-//     const response = await fetch(`http://localhost:3000/weather?address=${location}`,{origin: "cors" });
-//     const data = await response.json();
-//     // console.log(data);
-//     if(data.error){
-//         console.log(data.error);
-//     }else{
-//         return data ;
-//     }
-// }
-
-// getWeatherByLocation();
-// function getWeatherByLocation(location='Karachi'){
-//     fetch(`http://localhost:3000/weather?address=${location}`, {origin: "cors" }).then(response => response.json())
-//     .then( data => {
-//         if(data.error){
-//             return data.error ;
-//         }else{
-//             // console.log(data);
-//             return data;
-//         }
-//     })
-// }
-
 const form = document.querySelector('form');
 const search = document.getElementById("search");
 const main = document.getElementById("main");
