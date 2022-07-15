@@ -13,8 +13,8 @@ form.addEventListener("submit",(e)=> {
     if (!location) {
        location='Karachi';
     }
-
-    fetch(`http://localhost:3000/weather?address=${location}`, {origin: "cors" }).then(response => response.json())
+    // `http://localhost:3000/weather?address=${location}`
+    fetch(`/weather?address=${location}`, {origin: "cors" }).then(response => response.json())
         .then( data => {
             if(data.error){
                 weather.innerHTML = `<p>${data.error}</p>`
